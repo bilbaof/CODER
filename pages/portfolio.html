@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/Favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header class="header">
+    <div class="header__logo">
+      <a href="../index.html">
+        <!--De vuelta a Inicio-->
+        <img src="../assets/images/Final-logo-PRJCT-vierkant-black-ground-colour.png" alt="Logo inicio"
+          height="100px" />
+      </a>
+    </div>
+    <nav class="header__navegacion">
+      <ul class="header__navegacion__lista">
+        <li><a href="../pages/portfolio.html">Portfolio</a></li>
+        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+        <li><a href="../pages/servicios.html">Servicios</a></li>
+        <li><a href="../pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--Main-->
+  <main>
+    <!--Buscador-->
+    <section class="buscador">
+      <form action="" method="GET" class="buscador__parametros">
+        <input type="radio" name="superficie" id="50m2" />
+        <label for="50m2">50m2</label>
+
+        <input type="radio" name="superficie" id="100m2" />
+        <label for="100m2">100m2</label>
+
+        <input type="radio" name="superficie" id="500m2" />
+        <label for="500m2">500m2</label>
+      </form>
+    </section>
+    <!--Obras-->
+    <section class="obras">
+      <div class="obras__tarjeta">
+        <h2 class="obras__tarjeta__titulo">Obra 1</h2>
+        <img src="../assets/images/portfolio cover 1.jpeg" alt="Portada obra 1" width="400px"
+          class="obras__tarjeta__foto" />
+        <p class="obras__tarjeta__descripcion">Ubicacion: Buenos Aires</p>
+        <p class="obras__tarjeta__descripcion">Superficie: 120m2</p>
+        <p class="obras__tarjeta__descripcion">Rubro: Retail</p>
+      </div>
+      <div class="obras__tarjeta">
+        <h2 class="obras__tarjeta__titulo">Obra 2</h2>
+        <img src="../assets/images/portfolio cover 2.png" alt="Portada obra 2" width="300px"
+          class="obras__tarjeta__foto" />
+        <p class="obras__tarjeta__descripcion">Ubicacion: Tandil</p>
+        <p class="obras__tarjeta__descripcion">Superficie: 400m2</p>
+        <p class="obras__tarjeta__descripcion">Rubro: Oficinas</p>
+      </div>
+    </section>
+  </main>
+  <!--Footer-->
+  <footer>
+    <section class="footer">
+      <h5 class="footer__mail">prjctwrks@gmail.com</h5>
+      <h5 class="footer__tel">011-1532426193</h5>
+      <h5 class="footer__direccion">Av. del Libertador 413</h5>
+    </section>
+    <!--Vinculo a whatsapp-->
+    <div class="whatsapp">
+      <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+        <img src="../assets/images/whatsapp.svg" alt="whatsapp" width="50" height="50">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

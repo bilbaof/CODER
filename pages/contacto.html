@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/Favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="header__logo">
+            <a href="../index.html">
+                <!--De vuelta a Inicio-->
+                <img src="../assets/images/Final-logo-PRJCT-vierkant-black-ground-colour.png" alt="Logo inicio"
+                    height="100px" />
+            </a>
+        </div>
+        <nav class="header__navegacion">
+            <ul class="header__navegacion__lista">
+                <li><a href="../pages/portfolio.html">Portfolio</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/servicios.html">Servicios</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main-->
+    <main>
+        <section class="contacto">
+            <h1 class="contacto__titulo">Contacto</h1>
+            <div class="contacto__mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9757.779602479977!2d4.864175820264715!3d52.39920886750542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf59a59172dd911ef!2sPRJCT%20WRKS!5e0!3m2!1ses-419!2snl!4v1660036708087!5m2!1ses-419!2snl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contacto__form">
+                <form action="" method="GET" class="contacto__campos">
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input type="text" placeholder="Juan Martinez" id="nombre" />
+                    <label for="mail">Mail:</label>
+                    <input type="mail" placeholder="xxx@mail.com" id="mail" />
+                    <label for="telefono">Telefono:</label>
+                    <input type="text" placeholder="1111-1111" id="telefono" />
+                    <label for="mensaje">Escriba su mensaje:</label>
+                    <textarea cols="30" rows="10" placeholder="Mensaje" id="mensaje"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <section class="footer">
+            <h5 class="footer__mail">prjctwrks@gmail.com</h5>
+            <h5 class="footer__tel">011-1532426193</h5>
+            <h5 class="footer__direccion">Av. del Libertador 413</h5>
+        </section>
+        <!--Vinculo a whatsapp-->
+        <div class="whatsapp">
+            <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+                <img src="../assets/images/whatsapp.svg" alt="whatsapp" width="50" height="50">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
