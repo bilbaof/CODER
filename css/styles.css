@@ -13,13 +13,13 @@ a {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(146, 146, 146);
+    
 }
 
 /* Header */
 .header {
     background-color: black;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -31,9 +31,13 @@ body {
     margin: 0 20px;
     display: inline-block;
 }
-
+.header__navegacion-lista li:hover{
+    transform: translateY(-10px);
+    transition: transform 0.5s;
+}
 .header__navegacion-lista a:hover {
     color: red;
+    
 }
 
 .header__navegacion-lista a {
@@ -47,7 +51,7 @@ body {
 
 /* pagina Index */
 main {
-    background-color: rgb(146, 146, 146);
+    background-image: linear-gradient(black, rgb(98, 98, 98), black);
 }
 .caratula {
     margin-bottom: 50px;
@@ -271,8 +275,8 @@ main {
 /* Footer */
 .footer {
     background-color: black;
-    margin-top: 20px;
-    padding: 20px;
+    padding: 10px;
+    padding-top: 40px;
     color: white;
 }
 
