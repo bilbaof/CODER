@@ -46,13 +46,14 @@ main {
     margin: 0;
     outline: none;
     position: relative;
+    
 }
 .caratula__texto {
     color: rgb(21, 21, 21);
     position: absolute;
     top: 200px;
     left: 50px;
-
+    
 }
 .portada {
     margin: 50px 20px;
@@ -129,17 +130,38 @@ iframe {
     margin-bottom: 15px;
 }
 
+.card-img { 
+    height: 500px;
+
+}
+
+.card-text-background {
+    position: relative;
+    
+}
+.card-title {
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    
+}
+.card-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
 /* Pagina Nosotros */
 .socios__titulo {
     color: white;
     font-size: 40px
 }
-.card-title {
+.card-title-socios {
     color: red;
 }
-.card-body {
+.card-body-socios {
     display: flex;
 }
+
 .tecnologias__logo {
     padding: 30px;
     height: 200px;
@@ -148,7 +170,6 @@ iframe {
 
 /* Pagina Servicios*/
 .servicios {
-    margin: 20px;
     padding: 10px;
 }
 
@@ -193,25 +214,17 @@ iframe {
 /* Pagina Contacto*/
 .contacto {
     height: 650px;
-    margin: 20px;
     padding: 10px;
 }
 
 .contacto__form {
-    margin: 20px;
-    padding: 0px;
     display: inline-block;
-}
-
-.contacto__titulo {
-    color: white;
-    margin-bottom: 20px;
 }
 
 .contacto__mapa {
     display: inline-block;
     padding: 20px;
-    margin: 20px;
+    height: auto;
 }
 
 .contacto__form input,
@@ -219,7 +232,9 @@ iframe {
 .contacto__form button {
     display: block;
 }
-
+.contacto__campos {
+    width: auto;
+}
 .contacto__form button {
     color: white;
     padding: 10px;
