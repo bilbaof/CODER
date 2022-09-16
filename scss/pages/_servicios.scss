@@ -1,0 +1,42 @@
+.servicios {
+    padding: 10px;
+}
+
+.titulo {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+.servicios__tarjeta {
+    background-color: rgb(56, 56, 56);
+    border-radius: 10px;
+    margin: 30px 20px 20px 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    overflow: hidden;
+
+}
+
+.servicios__tarjeta h2 {
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.servicios__tarjeta h3 {
+    color: red;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.servicios__tarjeta p {
+    color: white;
+    font-size: large;
+}
+.servicios__tarjeta-img {
+    size-adjust: 100%;
+}

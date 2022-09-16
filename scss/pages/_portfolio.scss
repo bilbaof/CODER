@@ -1,0 +1,33 @@
+.buscador {
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+.obras__tarjeta__foto {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-img { 
+    height: 500px;
+
+}
+
+.card-text-background {
+    position: relative;
+    
+}
+.card-title {
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    
+}
+.card-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}

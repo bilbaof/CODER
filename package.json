@@ -1,0 +1,22 @@
+{
+  "name": "coder",
+  "version": "1.0.0",
+  "description": "proyecto para coder",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/styles2.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilbaof/CODER.git"
+  },
+  "author": "Francisco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilbaof/CODER/issues"
+  },
+  "homepage": "https://github.com/bilbaof/CODER#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

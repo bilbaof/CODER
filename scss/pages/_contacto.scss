@@ -1,0 +1,30 @@
+.contacto {
+    height: 650px;
+    padding: 10px;
+}
+
+.contacto__form {
+    display: inline-block;
+}
+
+.contacto__mapa {
+    display: inline-block;
+    padding: 20px;
+    height: auto;
+}
+
+.contacto__form input,
+.contacto__form label,
+.contacto__form button {
+    display: block;
+}
+.contacto__campos {
+    width: auto;
+}
+.contacto__form button {
+    color: white;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}

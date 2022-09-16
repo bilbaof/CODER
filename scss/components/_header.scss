@@ -1,0 +1,13 @@
+.header {
+    background-color: black;
+}
+
+.nav-item a:hover {
+    color: red !important; 
+    transform: translateY(-10px);
+    transition: 1s;
+}
+
+.header__navegacion span {
+    display: none;
+}
