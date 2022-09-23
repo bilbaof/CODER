@@ -7,15 +7,16 @@
     margin: 0;
     outline: none;
     position: relative;
-    
+
+    &__texto {
+        color: rgb(21, 21, 21);
+        position: absolute;
+        top: 200px;
+        left: 50px;
+    }
+
 }
-.caratula__texto {
-    color: rgb(21, 21, 21);
-    position: absolute;
-    top: 200px;
-    left: 50px;
-    
-}
+
 .portada {
     margin: 50px 20px;
     display: grid;
@@ -29,23 +30,22 @@
     padding: 10px;
 }
 
-.obras {
-    gap: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.obras {   
     max-width: 1200px;
     margin: 0 auto;
+    @include templateGrid(3);
     
+    &__tarjeta{
+        padding: 5px;
+        background-color: white;
+        border-radius: 20px;
+        width: 300px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 60%);
+        position: relative;
+    
+    }
 }
-.obras__tarjeta{
-    padding: 5px;
-    background-color: white;
-    border-radius: 20px;
-    width: 300px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 60%);
-    position: relative;
 
-}
 .tarjeta__imagen {
     height: 300px;
     width: 100%;
@@ -67,9 +67,18 @@
 }
 
 .tarjeta__nombre {
-    font-size: 20px;
     margin: 10px;
     color: white;
     position: absolute;
     bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+    .portada{
+        grid-template-columns: 1fr;
+    } 
+    .obras{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    } 
 }

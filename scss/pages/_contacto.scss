@@ -1,11 +1,24 @@
 .contacto {
     height: 650px;
     padding: 10px;
+
+    &__titulo {
+    @extend .titulos;
+    }
+    
+    &__form {
+        display: inline-block;
+    }
+
+    &__mapa {
+        display: inline-block;
+        padding: 20px;
+        height: auto;
+    }
+    
 }
 
-.contacto__form {
-    display: inline-block;
-}
+
 
 .contacto__mapa {
     display: inline-block;

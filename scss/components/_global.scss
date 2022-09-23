@@ -6,33 +6,80 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    
+
 }
+
 main {
     background-image: linear-gradient(black, rgb(98, 98, 98), black);
 }
+
 iframe {
     width: 100%;
     height: 300px;
 }
+
 footer h5 {
     display: inline-block;
     padding-right: 30px;
 }
+
 .whatsapp {
     position: fixed;
     bottom: 30px;
     right: 30px;
 }
+
 .footer {
     background-color: black;
     padding: 10px;
     padding-top: 40px;
     color: white;
+
+    &__rrss {
+        //mapa
+        
+        $iconSocialMedia: (whatsapp: rgb(0, 180, 36),
+            instagram: rgb(255, 9, 157),
+            linkedin: rgb(23, 124, 255),
+        );
+
+        //ciclo-bucle
+
+        @each $nameSocialMedia,
+        $colorIcon in $iconSocialMedia {
+            .rs-#{$nameSocialMedia} {
+                color: white;
+                font-size: 35px;
+                transition: 0.3s all;
+
+                &:hover {
+                    color: $colorIcon
+                }
+            }
+        }
+    }
+
+
+}
+
+
+//extends
+.titulos {
+    color: white;
+    font-size: 40px
+}
+
+//mixins
+
+@mixin templateGrid($columns) {
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
 }

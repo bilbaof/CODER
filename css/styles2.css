@@ -42,32 +42,28 @@ footer h5 {
   padding: 10px;
   padding-top: 40px;
   color: white; }
+  .footer__rrss .rs-whatsapp {
+    color: white;
+    font-size: 35px;
+    transition: 0.3s all; }
+    .footer__rrss .rs-whatsapp:hover {
+      color: #00b424; }
+  .footer__rrss .rs-instagram {
+    color: white;
+    font-size: 35px;
+    transition: 0.3s all; }
+    .footer__rrss .rs-instagram:hover {
+      color: #ff099d; }
+  .footer__rrss .rs-linkedin {
+    color: white;
+    font-size: 35px;
+    transition: 0.3s all; }
+    .footer__rrss .rs-linkedin:hover {
+      color: #177cff; }
 
-@media (max-width: 1000px) {
-  .portada {
-    grid-template-columns: 1fr; }
-  .obras {
-    grid-template-columns: 1fr;
-    justify-items: center; } }
-
-@media (max-width: 768px) {
-  .servicios__tarjeta {
-    grid-template-columns: 1fr; } }
-
-@media (max-width: 600px) {
-  .header__navegacion-lista {
-    display: none; }
-  .header__navegacion span {
-    display: inline-block;
-    padding-right: 30px;
-    padding-top: 30px; } }
-
-@media (max-width: 320px) {
-  .servicios__tarjeta {
-    grid-template-columns: 1fr; }
-  .servicios__tarjeta-img {
-    width: 100%;
-    height: 200px; } }
+.titulos, .portfolio__titulo, .socios__titulo, .titulo, .contacto__titulo {
+  color: white;
+  font-size: 40px; }
 
 .caratula {
   display: block;
@@ -78,12 +74,11 @@ footer h5 {
   margin: 0;
   outline: none;
   position: relative; }
-
-.caratula__texto {
-  color: #151515;
-  position: absolute;
-  top: 200px;
-  left: 50px; }
+  .caratula__texto {
+    color: #151515;
+    position: absolute;
+    top: 200px;
+    left: 50px; }
 
 .portada {
   margin: 50px 20px;
@@ -96,19 +91,18 @@ footer h5 {
   padding: 10px; }
 
 .obras {
+  max-width: 1200px;
+  margin: 0 auto;
   gap: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.obras__tarjeta {
-  padding: 5px;
-  background-color: white;
-  border-radius: 20px;
-  width: 300px;
-  box-shadow: 0 25px 50px -12px black;
-  position: relative; }
+  grid-template-columns: repeat(3, 1fr); }
+  .obras__tarjeta {
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 25px 50px -12px black;
+    position: relative; }
 
 .tarjeta__imagen {
   height: 300px;
@@ -134,6 +128,13 @@ footer h5 {
   color: white;
   position: absolute;
   bottom: 15px; }
+
+@media (max-width: 1000px) {
+  .portada {
+    grid-template-columns: 1fr; }
+  .obras {
+    grid-template-columns: 1fr;
+    justify-items: center; } }
 
 .buscador {
   padding: 20px;
@@ -162,10 +163,6 @@ footer h5 {
   bottom: 30px;
   left: 30px; }
 
-.socios__titulo {
-  color: white;
-  font-size: 40px; }
-
 .card-title-socios {
   color: red; }
 
@@ -181,8 +178,6 @@ footer h5 {
   padding: 10px; }
 
 .titulo {
-  font-size: 30px;
-  color: white;
   margin-bottom: 40px;
   margin-left: 30px; }
 
@@ -195,31 +190,49 @@ footer h5 {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   overflow: hidden; }
+  .servicios__tarjeta h2 {
+    color: white;
+    font-size: 30px;
+    margin-top: 20px; }
+  .servicios__tarjeta h3 {
+    color: red;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px; }
+  .servicios__tarjeta p {
+    color: white;
+    font-size: large; }
+  .servicios__tarjeta-img {
+    size-adjust: 100%; }
 
-.servicios__tarjeta h2 {
-  color: white;
-  font-size: 30px;
-  margin-top: 20px; }
+@media (max-width: 1000px) {
+  .servicios__tarjeta {
+    grid-template-columns: 1fr; } }
 
-.servicios__tarjeta h3 {
-  color: red;
-  font-size: 20px;
-  margin-top: 10px;
-  padding-bottom: 10px; }
+@media (max-width: 320px) {
+  .servicios__tarjeta {
+    grid-template-columns: 1fr; }
+  .servicios__tarjeta-img {
+    width: 100%;
+    height: 200px; } }
 
-.servicios__tarjeta p {
-  color: white;
-  font-size: large; }
-
-.servicios__tarjeta-img {
-  size-adjust: 100%; }
+@media (max-width: 600px) {
+  .header__navegacion-lista {
+    display: none; }
+  .header__navegacion span {
+    display: inline-block;
+    padding-right: 30px;
+    padding-top: 30px; } }
 
 .contacto {
   height: 650px;
   padding: 10px; }
-
-.contacto__form {
-  display: inline-block; }
+  .contacto__form {
+    display: inline-block; }
+  .contacto__mapa {
+    display: inline-block;
+    padding: 20px;
+    height: auto; }
 
 .contacto__mapa {
   display: inline-block;

@@ -1,6 +1,5 @@
 .socios__titulo {
-    color: white;
-    font-size: 40px
+    @extend .titulos;
 }
 .card-title-socios {
     color: red;
