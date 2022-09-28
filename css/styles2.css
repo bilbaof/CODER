@@ -252,3 +252,7 @@ footer h5 {
   background-color: red;
   border: none;
   border-radius: 5px; }
+  .contacto__form button:hover {
+    color: red;
+    background-color: white;
+    transition: 0.3s; }

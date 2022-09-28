@@ -17,9 +17,6 @@
     }
     
 }
-
-
-
 .contacto__mapa {
     display: inline-block;
     padding: 20px;
@@ -40,4 +37,10 @@
     background-color: red;
     border: none;
     border-radius: 5px;
+
+    &:hover {
+        color: red;
+        background-color: white;
+        transition: 0.3s;
+    }
 }
