@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Te ayudamos con el diseño y contruccion de las nuevas oficinas para tu Empresa, charlemos!">
+  <meta name="description"
+    content="Te ayudamos con el diseño y contruccion de las nuevas oficinas para tu Empresa, charlemos!">
   <link rel="shortcut icon" href="./assets/images/Favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/styles2.css" />
-  <title>PRJCT WRKS - Diseño y construccion de oficinas</title>
+  <title>Diseño y construccion de oficinas - PRJCT WRKS</title>
 </head>
 
 <body>
@@ -75,42 +76,66 @@
     <!--Video-->
     <section class="container">
       <div class="row my-5">
-        <div class=" col-12 col-sm-7 d-flex justify-content-center video">
-          <iframe src="https://www.youtube.com/embed/X5dfxj3Kw7c" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-        <div class="col-12 col-sm-5 texto-video">
-          <h3>PRJCT WRKS</h3>
-          <p>El equipo de PRJCT WRKS está conformado por colaboradores y asesores de amplia trayectoria en la industria de la arquitectura corporativa.
-            <br>
-            Desarrollamos nuestro trabajo diario en seis áreas interdisciplinarias: Desarrollo, Proyectos, Obras, Administración, Comercial y Presupuestos que nos permite desarrollar la ejecución integral de obras de forma optimizada, en menos tiempo y con excelentes resultados para nuestros clientes.</p>
+        <div class="col-12 intro">
+          <h2 class="intro__titulo">PRJCT WRKS</h2>
+          <p class="intro__texto">El equipo de PRJCT WRKS está conformado por colaboradores y asesores de amplia
+            trayectoria en la industria
+            de la arquitectura corporativa.
+          </p>
         </div>
       </div>
     </section>
     <!--Obras-->
-    <section class="obras py-3">
-      <article class="obras__tarjeta">
-        <img src="./assets/images/index_obra 01.jpeg" alt="Imagenes portada" class="tarjeta__imagen">
-        <h3 class="tarjeta__nombre">Obra 1</h3>
-        <a href="./pages/portfolio.html">
-          <h5 class="tarjeta__info">VER MAS</h5>
-        </a>
-      </article>
-      <article class="obras__tarjeta">
-        <img src="./assets/images/index_obra 02.jpeg" alt="Imagenes portada" class="tarjeta__imagen">
-        <h3 class="tarjeta__nombre">Obra 2</h3>
-        <a href="./pages/portfolio.html">
-          <h5 class="tarjeta__info">VER MAS</h5>
-        </a>
-      </article>
-      <article class="obras__tarjeta">
-        <img src="./assets/images/index_obra 03.jpeg" alt="Imagenes portada" class="tarjeta__imagen">
-        <h3 class="tarjeta__nombre">Obra 3</h3>
-        <a href="./pages/portfolio.html">
-          <h5 class="tarjeta__info">VER MAS</h5>
-        </a>
-      </article>
+
+    <section class="container py-3">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselObras" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselObras" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselObras" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselObras" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="./pages/portfolio.html">
+                  <img src="./assets/images/index_obra 01.jpg" class="d-block w-100" alt="Obra Loreal">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>L'OREAL</h5>
+                    <p>BUENOS AIRES - 1500 m2.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./pages/portfolio.html">
+                  <img src="./assets/images/index_obra 02.jpg" class="d-block w-100" alt="Obra Cefas">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>AXION</h5>
+                    <p>BUENOS AIRES - 1200 m2.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./pages/portfolio.html">
+                  <img src="./assets/images/index_obra 04.jpg" class="d-block w-100" alt="Obra Danone">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>PANTENE</h5>
+                    <p>SANTIAGO DE CHILE - 1350 m2.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselObras" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselObras" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
     </section>
   </main>
   <!--Footer-->
@@ -126,10 +151,12 @@
           </ul>
         </div>
         <div class="footer__rrss col-12 col-sm-6 d-flex justify-content-center">
-         <a href="" class="rs-whatsapp"><i class="bi bi-whatsapp mx-3"></i></a> 
+          <a href="" class="rs-whatsapp"><i class="bi bi-whatsapp mx-3"></i></a>
           <a href="" class="rs-instagram"><i class="bi bi-instagram mx-3"></i></a>
-          <a href="" class="rs-linkedin"><i class="bi bi-linkedin mx-3"></i></a>
+          <a href="https://www.linkedin.com/in/francisco-bilbao/" class="rs-linkedin"><i
+              class="bi bi-linkedin mx-3"></i></a>
         </div>
+      </div>
       </div>
     </section>
   </footer>

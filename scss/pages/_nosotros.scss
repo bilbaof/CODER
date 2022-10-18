@@ -1,3 +1,14 @@
+.card__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        height: auto;
+        
+    }
+}
+
 .socios__titulo {
     @extend .titulos;
 }
@@ -12,4 +23,10 @@
     padding: 30px;
     height: 200px;
     width: 220px;
+}
+.btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    
 }

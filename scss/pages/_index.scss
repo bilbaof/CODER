@@ -9,7 +9,7 @@
     position: relative;
 
     &__texto {
-        color: rgb(21, 21, 21);
+        color: rgb(0, 0, 0);
         position: absolute;
         top: 200px;
         left: 50px;
@@ -25,9 +25,17 @@
 
 }
 
-.texto-video {
+.intro {
     color: white;
     padding: 10px;
+
+    &__titulo {
+        font-size: 45px;
+    }
+    &__texto {
+        font-size: 20px;
+        line-height: 2;
+    }
 }
 
 .obras {   
